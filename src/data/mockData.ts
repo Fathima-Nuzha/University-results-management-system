@@ -1,0 +1,207 @@
+import { User, Faculty, Course, Student, Result, Stats } from '../types';
+
+export const mockUsers: User[] = [
+  {
+    id: '1',
+    name: 'Admin User',
+    email: 'admin@example.com',
+    role: 'admin',
+  },
+  {
+    id: '2',
+    name: 'John Doe',
+    email: 'john.doe@example.com',
+    role: 'student',
+    studentId: 'STU001',
+  },
+  {
+    id: '3',
+    name: 'Jane Smith',
+    email: 'jane.smith@example.com',
+    role: 'student',
+    studentId: 'STU002',
+  },
+];
+
+export const mockFaculties: Faculty[] = [
+  { id: '1', name: 'Computer Science & Engineering' },
+  { id: '2', name: 'Electrical Engineering' },
+  { id: '3', name: 'Business Administration' },
+  { id: '4', name: 'Medicine' },
+];
+
+export const mockCourses: Course[] = [
+  {
+    id: '1',
+    name: 'Introduction to Programming',
+    code: 'CS101',
+    facultyId: '1',
+    semester: 1,
+    creditHours: 3,
+  },
+  {
+    id: '2',
+    name: 'Data Structures and Algorithms',
+    code: 'CS201',
+    facultyId: '1',
+    semester: 2,
+    creditHours: 4,
+  },
+  {
+    id: '3',
+    name: 'Circuit Theory',
+    code: 'EE101',
+    facultyId: '2',
+    semester: 1,
+    creditHours: 4,
+  },
+  {
+    id: '4',
+    name: 'Digital Logic Design',
+    code: 'EE201',
+    facultyId: '2',
+    semester: 2,
+    creditHours: 3,
+  },
+  {
+    id: '5',
+    name: 'Principles of Management',
+    code: 'BA101',
+    facultyId: '3',
+    semester: 1,
+    creditHours: 3,
+  },
+  {
+    id: '6',
+    name: 'Accounting Fundamentals',
+    code: 'BA102',
+    facultyId: '3',
+    semester: 1,
+    creditHours: 3,
+  },
+];
+
+export const mockStudents: Student[] = [
+  {
+    id: '1',
+    name: 'John Doe',
+    studentId: 'STU001',
+    email: 'john.doe@example.com',
+    facultyId: '1',
+    currentSemester: 3,
+    enrollmentYear: 2022,
+    profileImage: 'https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=150',
+  },
+  {
+    id: '2',
+    name: 'Jane Smith',
+    studentId: 'STU002',
+    email: 'jane.smith@example.com',
+    facultyId: '2',
+    currentSemester: 2,
+    enrollmentYear: 2023,
+    profileImage: 'https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=150',
+  },
+  {
+    id: '3',
+    name: 'David Johnson',
+    studentId: 'STU003',
+    email: 'david.johnson@example.com',
+    facultyId: '1',
+    currentSemester: 4,
+    enrollmentYear: 2021,
+    profileImage: 'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=150',
+  },
+  {
+    id: '4',
+    name: 'Emily Williams',
+    studentId: 'STU004',
+    email: 'emily.williams@example.com',
+    facultyId: '3',
+    currentSemester: 1,
+    enrollmentYear: 2023,
+    profileImage: 'https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=150',
+  },
+];
+
+export const mockResults: Result[] = [
+  {
+    id: '1',
+    studentId: 'STU001',
+    courseId: '1',
+    semester: 1,
+    marks: 85,
+    grade: 'A',
+    academicYear: '2022-2023',
+  },
+  {
+    id: '2',
+    studentId: 'STU001',
+    courseId: '2',
+    semester: 2,
+    marks: 78,
+    grade: 'B+',
+    academicYear: '2022-2023',
+  },
+  {
+    id: '3',
+    studentId: 'STU002',
+    courseId: '3',
+    semester: 1,
+    marks: 92,
+    grade: 'A+',
+    academicYear: '2023-2024',
+  },
+  {
+    id: '4',
+    studentId: 'STU002',
+    courseId: '4',
+    semester: 2,
+    marks: 88,
+    grade: 'A',
+    academicYear: '2023-2024',
+  },
+  {
+    id: '5',
+    studentId: 'STU003',
+    courseId: '1',
+    semester: 1,
+    marks: 72,
+    grade: 'B',
+    academicYear: '2021-2022',
+  },
+  {
+    id: '6',
+    studentId: 'STU003',
+    courseId: '2',
+    semester: 2,
+    marks: 95,
+    grade: 'A+',
+    academicYear: '2021-2022',
+  },
+  {
+    id: '7',
+    studentId: 'STU004',
+    courseId: '5',
+    semester: 1,
+    marks: 84,
+    grade: 'A-',
+    academicYear: '2023-2024',
+  },
+  {
+    id: '8',
+    studentId: 'STU004',
+    courseId: '6',
+    semester: 1,
+    marks: 76,
+    grade: 'B+',
+    academicYear: '2023-2024',
+  },
+];
+
+export const mockStats: Stats = {
+  totalStudents: mockStudents.length,
+  totalFaculties: mockFaculties.length,
+  totalCourses: mockCourses.length,
+  totalResults: mockResults.length,
+};
