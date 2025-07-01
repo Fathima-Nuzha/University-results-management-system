@@ -1,0 +1,4 @@
+reg_no,name,email,password,course_id
+2021CS01,Alice Perera,alice@example.com,pass123,1
+2021CS02,Bob Fernando,bob@example.com,pass456,1
+2021IT01,Chathura Silva,chathura@example.com,pass789,2

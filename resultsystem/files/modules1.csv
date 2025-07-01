@@ -1,0 +1,5 @@
+module_code,module_name,semester,course_id
+CS101,Introduction to Programming,1,1
+CS102,Data Structures,1,1
+IT201,Network Fundamentals,2,2
+IT202(P),Network Lab,2,2

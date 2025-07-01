@@ -1,0 +1,78 @@
+.manage-page {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.manage-title {
+  font-size: 28px;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #222;
+}
+
+.result-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.result-form input,
+.result-form select {
+  padding: 8px 12px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  flex: 1 1 180px;
+  font-size: 16px;
+}
+
+.result-form button {
+  padding: 8px 18px;
+  background-color: #2874f0;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  flex: 0 0 140px;
+  transition: background-color 0.3s ease;
+}
+
+.result-form button:hover {
+  background-color: #1a52c8;
+}
+
+.result-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+}
+
+.result-table th,
+.result-table td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.result-table th {
+  background-color: #e2e8f0;
+  font-weight: 600;
+}
+
+.result-table button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 8px;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+.result-table button:hover {
+  color: #2874f0;
+}

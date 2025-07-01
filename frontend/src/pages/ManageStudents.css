@@ -1,0 +1,93 @@
+.manage-page {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 15px;
+  font-family: Arial, sans-serif;
+}
+
+.manage-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: #222;
+}
+
+.student-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+
+.student-form input {
+  padding: 8px 12px;
+  font-size: 14px;
+  flex: 1 1 180px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.student-form button {
+  padding: 8px 20px;
+  font-size: 16px;
+  background-color: #0078d7;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.student-form button:hover {
+  background-color: #005a9e;
+}
+
+.upload-section {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.upload-section input[type="file"] {
+  margin-right: 10px;
+}
+
+.upload-section button {
+  padding: 8px 20px;
+  background-color: #2c7a7b;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.upload-section button:hover {
+  background-color: #235a5b;
+}
+
+.student-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.student-table th,
+.student-table td {
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  text-align: left;
+}
+
+.student-table th {
+  background-color: #f3f3f3;
+}
+
+.student-table button {
+  margin-right: 6px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #0078d7;
+}
+
+.student-table button:hover {
+  color: #005a9e;
+}
